@@ -22,3 +22,13 @@ def gue():
                 total.append(var[tep-1::-1])
     print(total)
 gue()
+
+    for yyy, xxx in dict_a.items():
+        for zzz, ooo in dict_b.items():
+            if xxx == ooo and yyy == zzz:
+                dict_total[yyy or zzz] = abs(xxx-ooo)
+            elif yyy == zzz:
+                dict_total[yyy or zzz] = abs(xxx-ooo)
+            else:
+                dict_total[yyy or zzz] = xxx
+    print(dict_total)
